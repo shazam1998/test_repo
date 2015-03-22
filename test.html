@@ -1,0 +1,29 @@
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+window.alert('burgers');
+
+$(document).ready(function(){
+
+  var add = function (a,b) {return a+b;};
+
+
+  $(".print_bro").html('printed, bro!');
+  $(".print_button").on("click",function(){$(".print_bro").html(add(65,83));});
+
+});
+
+</script>
+
+
+<div class="print_bro">
+
+bro
+
+</div>
+<button class="print_button">print!</button>
+
+
+
+
+
